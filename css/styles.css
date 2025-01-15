@@ -1,0 +1,122 @@
+:root {
+  --main-color: #1A73E8;
+  --secondary-color: #d2339b;
+  --tertiary-color: #533178;
+  --quaternary-color: #1d256d;
+  --background-color: #f4f4f4;
+  --background2-color: #dad8d8;
+  --enfasis-color: #d40b0b;
+  --gradient-color: rgba(0, 0, 0, 0.5);
+  --text-color: #333333;
+  --text2-color: #666666;
+  --font-size: 1em;
+  --border-radius: 15px;
+  --shadow: 2px 2px 5px rgba(14, 7, 19, 0.4);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, header {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+
+  scroll-behavior: smooth;
+  margin: 0;
+  background-color: var(--background-color);
+}
+
+#banner{
+  padding: 100px 0;
+}
+
+#sobreNosotros{
+  padding: 100px 0;
+}
+
+#sobreNosotros img{
+  object-fit: cover;
+  object-position: center;
+  box-shadow: var(--shadow);
+}
+
+#sobreNosotros p{
+  color: var(--text2-color);
+}
+
+#servicios{
+  padding: 100px 0;
+}
+
+#contacto{
+  padding: 100px 0;
+}
+
+
+#contactanos{
+  padding: 50px 0;
+  background-color: var(--background2-color);
+}
+
+#contactanos a{
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+#contactanos a:hover{
+  color: var(--secondary-color);
+}
+
+#casosExito{
+  padding: 100px;
+}
+
+#services .card{
+  transition: all .3s ease-in-out;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  margin: 20px;
+}
+
+#services .card:hover{
+  transform: scale(1.05);
+  box-shadow: var(--shadow);
+}
+
+hr{
+  border : 1px solid var(--tertiary-color);
+  box-shadow: var(--shadow);
+}
+
+h2{
+  color: var(--main-color);
+  text-decoration: solid;
+}
+
+.card-title{
+  color: var(--text-color);
+}
+
+.card-text{
+  color: var(--text2-color);
+}
+
+footer{
+  color: white;
+  font-size: .8em;
+  padding: 20px 0;
+}
+
+
+
+@media (min-width: 720px) {
+  #banner img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
